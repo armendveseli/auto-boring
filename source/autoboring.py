@@ -30,7 +30,7 @@ def clamp(value, _min, _max) -> Number:
       return value
 
     
-def does_file_exist(file: str) -> bool:
+def file_exists(file: str) -> bool:
   if file.is_file():
     return True
   else:
