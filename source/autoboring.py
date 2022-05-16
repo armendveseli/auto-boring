@@ -1,3 +1,5 @@
+from pathlib import Path
+
 def is_number(_object: object) -> bool:
   if isinstance(_object, int) or isinstance(_object, float):
     return True
@@ -26,3 +28,11 @@ def clamp(value, _min, _max) -> Number:
       return _max
     else:
       return value
+
+    
+def does_file_exist(file: str) -> bool:
+  if file.is_file():
+    return True
+  else:
+    return False
+    
