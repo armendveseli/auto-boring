@@ -35,4 +35,3 @@ def does_file_exist(file: str) -> bool:
     return True
   else:
     return False
-    
